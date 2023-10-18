@@ -30,13 +30,13 @@ int main()
 			{
 				//If the next characters match our initial character, we increase our count by one. We want to do this to track duplicates.
 				count++;
-				//We set str[y] = '0' as we don't want to print our duplicate character many times.
-				str[y] = '0';
+				//We set str[y] = '0' as we don't want to print our duplicate characters many times.
+				str[y] = ' ';
 			}
 		}
 
-		//Prints the character and number of occurances in the given string. The process repeats until entire string is traversed.
-		if (count > 1 && str[x] != '0') {
+		//Prints the character and number of occurrences in the given string. The process repeats until the entire string is traversed.
+		if (count > 1 && str[x] != ' ') {
 			std::cout << "The character: " << str[x] << "\nIs repeated " << count << " times\n\n";
 		}
 	}
